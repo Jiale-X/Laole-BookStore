@@ -1,6 +1,8 @@
 # Laole-BookStore
 vue + springboot 前后端分离老乐书城（师从b站编程界小明哥）
+
 配置（如果自己的不行可以试试降版本或换成下面的）：
+
 后端（springbootmy,batis-plus）
 
 <img width="973" height="471" alt="屏幕截图 2025-09-03 120310" src="https://github.com/user-attachments/assets/11fd4085-54e2-4508-a834-0263b594c24b" />
@@ -11,6 +13,16 @@ vue + springboot 前后端分离老乐书城（师从b站编程界小明哥）
 <img width="462" height="187" alt="屏幕截图 2025-09-03 120518" src="https://github.com/user-attachments/assets/616cb61c-0923-4217-9c39-b158513bce76" />
 
 数据库（mysql8.0）
+
+运行：
+
+前端运行命令
+
+npm run serve
+
+后端
+
+运行LaoleApplication.java
 
 效果：
 
