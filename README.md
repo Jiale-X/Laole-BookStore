@@ -9,6 +9,7 @@ vue + springboot 前后端分离老乐书城
 
 <img width="601" height="330" alt="屏幕截图 2025-09-03 120339" src="https://github.com/user-attachments/assets/ab687985-f5e4-433d-bed6-f2aaf568a6af" />
 <img width="462" height="187" alt="屏幕截图 2025-09-03 120518" src="https://github.com/user-attachments/assets/616cb61c-0923-4217-9c39-b158513bce76" />
+
 数据库（mysql8.0）
 
 效果：
