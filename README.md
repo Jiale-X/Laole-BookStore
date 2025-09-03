@@ -1,5 +1,5 @@
 # Laole-BookStore
-vue + springboot 前后端分离老乐书城（师从b站编程界小明哥）
+vue + springboot 前后端分离老乐书城（项目学习了b站编程界小明哥的仓库管理系统）
 
 配置（如果自己的不行可以试试降版本或换成下面的）：
 
