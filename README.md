@@ -16,7 +16,7 @@ vue + springboot 前后端分离老乐书城（师从b站编程界小明哥）
 
 运行：
 
-前端运行命令
+前端运行命令（运行前到laole_vue目录下运行npm i命令加载node_modules文件）
 
 npm run serve
 
