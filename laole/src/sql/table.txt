@@ -1,0 +1,78 @@
+CREATE TABLE admin(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	account VARCHAR(20),
+	name VARCHAR(20),
+	password VARCHAR(20),
+	sex INT,
+	age INT,
+	phone VARCHAR(20)
+);
+
+CREATE TABLE user(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	account VARCHAR(20),
+	name VARCHAR(20),
+	password VARCHAR(20),
+	sex INT,
+	age INT,
+	balance FLOAT,
+	phone VARCHAR(20)
+);
+
+CREATE TABLE book(
+	id int AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(20),
+	author VARCHAR(20),
+	publisher VARCHAR(20),
+	number INT DEFAULT '0',
+	price FLOAT
+);
+
+CREATE TABLE record(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	book_id INT,
+	book_name VARCHAR(20),
+	user_account VARCHAR(20),
+	user_name VARCHAR(20),
+	number INT,
+	price FLOAT,
+	money FLOAT,
+	time TIMESTAMP
+);
+
+BEGIN;
+INSERT INTO admin (id, account, name, password, sex, age, phone)
+VALUES (1, 'admin', '永乐大帝', '123', 1, 22, '15990971338');
+COMMIT;
+
+BEGIN;
+INSERT INTO book (id, name, author, publisher, price)
+VALUES (1,'明朝那些事儿. 第贰部, 万国来朝', '当年明月', '浙江人民出版社', 48);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(1精绝古城典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(2龙岭迷窟典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(3云南虫谷典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(4昆仑神宫典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(5黄皮子坟典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(6南海归墟典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(7怒晴湘西典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+INSERT INTO book (name, author, publisher, price)
+VALUES ('鬼吹灯(8巫峡棺山典藏版)'	,'天下霸唱','湖南文艺出版社', 24.56);
+COMMIT;
+
+BEGIN;
+INSERT INTO user (id, account, name, password, sex, age, balance, phone)
+VALUES (1,'user1', '用户1号', '123', 1, 22, 0, '15990971339');
+INSERT INTO user (account, name, password, sex, age, balance, phone)
+VALUES ('user2', '用户2号', '123', 1, 22, 0, '15990971339');
+INSERT INTO user (account, name, password, sex, age, balance, phone)
+VALUES ('qizhen', '朱祁镇', '123', 1, 15, 1, '15990971340');
+INSERT INTO user (account, name, password, sex, age, balance, phone)
+VALUES ('qiyu', '朱祁钰', '123', 1, 12, 1, '15990971341');
+COMMIT;

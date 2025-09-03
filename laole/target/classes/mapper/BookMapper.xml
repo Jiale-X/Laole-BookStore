@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laole.mapper.BookMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.laole.entity.Book">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="author" property="author" />
+        <result column="publisher" property="publisher" />
+        <result column="number" property="number" />
+        <result column="price" property="price" />
+    </resultMap>
+    <select id="listAll" resultType="com.laole.entity.Book">
+        select * from book
+    </select>
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, author, publisher, number, price
+    </sql>
+
+</mapper>
